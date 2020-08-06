@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+
+
+    /* begin reset css */
 :root {
     font-size: 10px;
 }
@@ -12,3 +16,68 @@
     z-index: 0;
     box-sizing: border-box;
 } 
+
+    /* end reset css  */
+
+:root {
+    --Red: hsl(0, 100%, 68%);
+    --veryDarkBlue: hsl(230, 29%, 20%);
+    --darkGrayishBlue:  hsl(230, 11%, 40%);
+    --grayishBlue: hsl(231, 7%, 65%);
+    --lightGrayishBlue: hsl(207,33%, 95%);
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
+    background-color: white;
+}
+
+.main {
+    margin-left: 16.5rem;
+    max-width: 1440px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6.4rem 16.5rem 16.5rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1;
+    color: var(--veryDarkBlue);
+}
+
+nav a:hover {
+    color: var(--Red);
+}
+
+.oval {
+    display: inline-block;
+    background-color: var(--lightGrayishBlue);
+    height: 6px;
+    width: 6px;
+    border-radius: 60px;
+    opacity: 15%;
+}
+
+.login {
+    opacity: 50%;
+}
+
