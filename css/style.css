@@ -37,7 +37,7 @@ body {
 
 .main {
     margin-left: 16.5rem;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 nav {
@@ -149,8 +149,8 @@ h1 {
 }
 
 .rectangle {
-    width: 705px;
-    height: 427px;
+    width: 49%;
+    height: 48%;
     background-color: #EDF2F6;
     border-radius: 0 0 0 60px;
     position: absolute;
