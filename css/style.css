@@ -71,7 +71,7 @@ nav a:hover {
 
 .oval {
     display: inline-block;
-    background-color: #242942;
+    background-color: var(--veryDarkBlue);
     height: 6px;
     width: 6px;
     border-radius: 60px;
@@ -80,6 +80,10 @@ nav a:hover {
 
 .login {
     opacity: 50%;
+}
+
+.hamburger {
+    display: none;
 }
 
 .content-container {
@@ -161,4 +165,77 @@ h1 {
     top: 0;
     right: 0;
     z-index: -1;
+}
+
+@media only screen and (max-width: 980px) {
+
+
+
+.main {
+    margin: 0;
+}
+
+nav {   
+    margin: 5rem 3.2rem 7.8rem 3.2rem;
+}
+
+nav ul {
+    display: none;
+    
+}
+
+
+
+.hamburger {
+    display: inline;
+}
+
+.content-container {
+    flex-direction: column-reverse;
+}
+
+section {
+    margin-top: 3rem;
+    width: auto;
+}
+
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1.6rem;
+}
+
+.motto {
+    margin-bottom: 2.7rem;
+}
+
+.demo {   
+    font-size: 1.4rem;
+    letter-spacing: 0.93px;
+    padding: 1.2rem 2.4rem;
+    margin: 0 2rem 9.2rem 0;
+}
+
+.preview {
+    font-size: 1.4rem;
+    letter-spacing: 2.5px;
+}
+
+
+.image-container img {
+    width: 482px;
+}
+
+.rectangle {
+    width: 49%;
+    height: 48%;
+    background-color: #EDF2F6;
+    border-radius: 0 0 0 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
 }
