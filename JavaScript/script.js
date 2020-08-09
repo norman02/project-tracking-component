@@ -7,18 +7,20 @@
 // get elements
 const menu = document.getElementById('menu')
 const menuButton = document.getElementById('menu_button')
-const links = document.getElementsByClassName('menu_link')
+const icon = document.getElementById('icon')
 
 let isOpen = false
 
 //open the menu
 const openMenue = ()=> {
+    icon.src = 'images/icon-close.svg'
     menu.style.display = 'block'
     isOpen = true
 }
 
 // close the menu
 const closeMenue = ()=> {
+    icon.src = 'images/icon-hamburger.svg'
     menu.style.display = 'none'
     isOpen = false
 }
