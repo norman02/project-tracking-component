@@ -14,11 +14,13 @@ let isOpen = false
 //open the menu
 const openMenue = ()=> {
     menu.style.display = 'block'
+    isOpen = true
 }
 
 // close the menu
 const closeMenue = ()=> {
     menu.style.display = 'none'
+    isOpen = false
 }
 
 const toggle = ()=> {
@@ -26,11 +28,9 @@ const toggle = ()=> {
     
     if (!isOpen) {
         openMenue()
-        isOpen = true
     }
     else {
         closeMenue()
-        isOpen = false
     }
     
 }
@@ -40,8 +40,17 @@ menuButton.addEventListener('click', e=> {
     toggle()
 } )
 
-// FIXME: 
-document.getElementById('test').addEventListener('click', closeMenue)
+
+document.querySelectorAll('.menu-link').forEach(e => {
+    e.addEventListener('click', e => {
+        e.preventDefault()
+        closeMenue()
+    })
+})
+
+
+    
+
 
 
 
