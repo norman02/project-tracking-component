@@ -73,6 +73,12 @@ nav a:hover,
     color: var(--Red);
 }
 
+button,
+button:active {
+    border: none;
+    outline: none;
+}
+
 .menu {
     display: none;
     position: fixed;
