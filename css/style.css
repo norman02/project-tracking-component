@@ -46,16 +46,19 @@ nav {
     margin: 6.4rem 16.5rem 16.5rem 0;
 }
 
-nav ul {
+nav ul,
+.menu ul {
     list-style-type: none;
 }
 
-nav li {
+nav li
+ {
     display: inline;
     padding: 2rem;
 }
 
-nav a {
+nav a,
+.menu a {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Barlow Condensed', sans-serif;
@@ -65,9 +68,44 @@ nav a {
     color: var(--veryDarkBlue);
 }
 
-nav a:hover {
+nav a:hover,
+.menu a:hover {
     color: var(--Red);
 }
+
+.menu {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    top: 100px;
+    width: 100%; 
+}
+
+.menu ul {
+    display: inline-block;
+    z-index: 1;
+    background-color: white;
+    border-radius: 3px;
+    padding-bottom: 24px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.menu a {
+    display: block;
+    letter-spacing: 1.2px;
+    margin: 24px 122px 0 122px;
+}
+
+.line {
+    width: 263px;
+    height: 1px;
+    opacity: 15%;
+    background-color: var(--veryDarkBlue);
+    margin: auto;
+    margin-top: 24px;
+}
+
 
 .oval {
     display: inline-block;
@@ -151,6 +189,10 @@ h1 {
     margin-right: 24px;
 }
 
+.demo:hover {
+    background-color: #FF8686;
+}
+
 .image-container {
     width: 49%;
     margin-right: 2.4rem;
@@ -168,8 +210,6 @@ h1 {
 }
 
 @media only screen and (max-width: 980px) {
-
-
 
 .main {
     margin: 0;
